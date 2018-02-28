@@ -169,8 +169,8 @@ module.exports = {
             scripts = scripts.replace('__meteor_runtime_config__', '<script type="text/javascript">__meteor_runtime_config__ = JSON.parse(decodeURIComponent("'+encodeURIComponent(JSON.stringify(settings))+'"));</script>');
             
             // add Meteor.disconnect() when no server is given
-            if(!program.url)
-                scripts += '        <script type="text/javascript">Meteor.disconnect();</script>';
+            //if(!program.url)
+             //   scripts += '        <script type="text/javascript">Meteor.disconnect();</script>';
 
             content = content.replace(/{{ *> *scripts *}}/, scripts);
 
